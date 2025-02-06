@@ -37,7 +37,7 @@ header p.lead {
 }
 
 footer {
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid #a6a6a6;
     margin-top: 2rem;
     padding-top: 1rem;
 }
@@ -53,6 +53,7 @@ footer p {
     flex-direction: column;
     direction: ltr;
     text-align: left;
+    background-color: #cccaca;
 }
 
 .card-img-top {
