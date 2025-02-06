@@ -3,10 +3,7 @@ body {
 }
 
 header {
-    background-color: #0da5fd;
-}
-header {
-    background-image: url('file:///C:/Users/adiga/Desktop/images/%D7%A2%D7%A8%D7%95%D7%9A.JPG');
+    background-image: url(file:///C:/Users/adiga/Desktop/My%20Blog/images/%D7%A2%D7%A8%D7%95%D7%9A.JPG);
     background-size: cover;
     background-position: center;
 }
