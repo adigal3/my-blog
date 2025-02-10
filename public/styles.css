@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Added background color for better contrast */
+    margin: 0; /* Removed default margin */
+    padding: 0; /* Removed default padding */
+}
+
+header {
+    background-image: url(images/11.JPG);
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Ensured text is centered in the header */
+    color: white; /* Added text color for better readability */
+    padding: 2rem 0; /* Added padding for spacing */
+}
+
+header img {
+    border: 5px solid white;
+    border-radius: 50%; /* Made the image circular */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+header p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s;
+    margin: 0 1rem; /* Added margin for spacing between icons */
+}
+
+.social-links a:hover {
+    color: #d4d4d4;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0; /* Remove margin above the title */
+}
+
+footer {
+    border-top: 1px solid #a6a6a6;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: #f8f9fa; /* Added background color for contrast */
+    text-align: center; /* Centers the footer content */
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* כרטיסים עם רקע אפור */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #e9ecef; /* אפור כהה יותר לכרטיסים */
+    border: 1px solid #ddd; /* Added border for better definition */
+    border-radius: 0.5rem; /* Added border radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    overflow: hidden; /* Ensured content doesn't overflow */
+    margin-bottom: 1rem; /* Added margin at the bottom */
+}
+
+.card-img-top {
+    height: 250px; /* Ensure the image takes up the full top part */
+    object-fit: cover;
+    width: 100%; /* Ensure image covers full width */
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the content fills the remaining space */
+    padding: 1rem; /* Adjusted padding for better spacing */
+    background-color: #ffffff; /* Light background for readability */
+    color: #333; /* Dark text color for contrast */
+    height: 100%; /* Ensure the body fills the remaining space in the card */
+}
+
+.card-body .card-title, .card-body p {
+    margin-top: 0; /* Ensure no unnecessary space above text */
+}
+
+/* כפתורים בצבע סגול, מתוחים לאורך כל הכרטיס */
+.btn {
+    background-color: #800080; /* Purple background */
+    color: white; /* White text */
+    border: none;
+    padding: 0.75rem 0; /* Adjusted padding for height consistency */
+    border-radius: 0.3rem;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none; /* Remove underline from buttons */
+    display: block; /* Makes the button a block element */
+    width: 100%; /* Make the button stretch to the full width of the card */
+    margin-top: auto; /* Push the button to the bottom of the card */
+    text-align: center; /* Center the text inside the button */
+}
+
+.btn:hover {
+    background-color: #6a006a; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* סידור הכרטיסים בצורה אופקית משמאל לימין */
+.row {
+    display: flex;
+    flex-direction: row; /* שינוי לסדר אופקי */
+    justify-content: center; /* מרכז את הכרטיסים */
+    gap: 1rem; /* רווח בין הכרטיסים */
+    flex-wrap: wrap; /* מאפשר למספר כרטיסים להיות בשורה אחת */
+}
+
+.col-md-4 {
+    width: 30%; /* כל כרטיס תופס 30% מהגודל הזמין */
+    margin-bottom: 1rem; /* רווח בין הכרטיסים */
+}
+
+/* התאמות למסכים קטנים */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* סדר אנכי */
+        align-items: center; /* יישור מרכזי בכרטיסים */
+    }
+
+    .col-md-4 {
+        width: 100%; /* כל כרטיס תופס 100% מהגודל הזמין */
+    }
+}
